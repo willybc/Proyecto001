@@ -2,10 +2,12 @@ header{
 	background: #6DBCFF;
 }
 
-	a{
+#item{
 		color: #FFFFFF;
 	}
 
-.title{
-	font-size: 15px;
+#titulo{
+	font-size: 22px;
+	color : #FFFFFF;
 }
+

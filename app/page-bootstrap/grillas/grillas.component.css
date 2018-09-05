@@ -1,0 +1,23 @@
+
+
+.col{
+    padding-bottom: 50px;
+    padding-top: 30px;
+    
+    margin-bottom:0.1px;
+    margin-top: 0.1px;
+    border-style: solid;
+    border-color: white;
+}
+
+#ejercicio1{
+    background: #70E867;
+}
+
+#ejercicio2{
+    background: #fdc428;
+}
+
+#ejercicio3{
+    background: #dd2929;
+}
