@@ -24,8 +24,8 @@
                                 <div class="col-md-6 offset-md-6 text-md-right text-center">
                                     <h1>Title</h1>
                                     <p class="d-none d-md-block">Ejemplo de una oracion</p>
-                                    <button type="button" class="btn btn-outline-light">Quiero ser orador</button>
-                                    <button type="button" class="btn btn-color">Comprar tickets</button>
+                                    <button type="button" class="btn btn-outline-light" data-target="#modalRegistro" data-toggle="modal">Quiero ser orador</button>
+                                    <button type="button" class="btn btn-color" data-target="#modalComprar" data-toggle="modal">Comprar tickets</button>
                                 </div>
                             </div>
                         </div>
@@ -145,13 +145,11 @@
                     <h2>Programador</h2>
                 </div>
             </div>
-
             <div class="row">
                 <div class="col text-center text-uppercase">
                     Alistate a la larga <abbr data-toggle="tooltip" title="Si una gran lista">lista</abbr> para convertirte en un gran programador
                 </div>
             </div>
-
             <div class="row">
                 <div class="col col-md-10 offset-md-1 col-lg-8 offset-lg-2 pt-2">
                         <form>
@@ -159,12 +157,10 @@
                                   <div class="form-group col-12 col-md-6">
                                     <input type="text" class="form-control" placeholder="Nombre">
                                   </div>
-
                                   <div class="form-group col-12 col-md-6">
                                     <input type="text" class="form-control" placeholder="Apellido">
                                   </div>
                                 </div>
-
                                 <div class="form-row">
                                     <div class="form-group col">
                                         <textarea name="text" class="form-control form-control-lg" placeholder="Sobre que quieres hablar?"></textarea>
@@ -173,21 +169,105 @@
                                         </small>
                                     </div>
                                 </div>
-
                                 <div class="form-row">
                                         <div class="form-group col">
                                             <button type="button" class="btn btn-color btn-block">Enviar</button>
                                         </div>
                                     </div>
-
-
-
                               </form>
                 </div>
             </div>
-
         </div>
 </section>
 <!-- /Formulario-->
+
+<!-- MODAL FORM-->
+  <div class="modal fade" id="modalRegistro" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+            <section id="form" class="mt-4 mb-4" class="pt-4 pb-3">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col text-center text-uppercase">
+                                <small>Conviertete en un</small>
+                                <h2>Programador</h2>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col text-center text-uppercase">
+                                Alistate a la larga <abbr data-toggle="tooltip" title="Si una gran lista">lista</abbr> para convertirte en un gran programador
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col col-md-10 offset-md-1 col-lg-8 offset-lg-2 pt-2">
+                                    <form>
+                                            <div class="form-row">
+                                              <div class="form-group col-12 col-md-6">
+                                                <input type="text" class="form-control" placeholder="Nombre">
+                                              </div>
+                                              <div class="form-group col-12 col-md-6">
+                                                <input type="text" class="form-control" placeholder="Apellido">
+                                              </div>
+                                            </div>
+                                            <div class="form-row">
+                                                <div class="form-group col">
+                                                    <textarea name="text" class="form-control form-control-lg" placeholder="Sobre que quieres hablar?"></textarea>
+                                                    <small class="form-text text-muted">
+                                                        Recuerda incluir un titulo para tu charla
+                                                    </small>
+                                                </div>
+                                            </div>
+                                            <div class="form-row">
+                                                    <div class="form-group col">
+                                                        <button type="button" class="btn btn-color btn-block">Enviar</button>
+                                                    </div>
+                                                </div>
+                                          </form>
+                            </div>
+                        </div>
+                    </div>
+            </section>
+      </div>
+    </div>
+  </div>
+<!-- /MODAL FORM-->
+
+<!-- MODAL2 COMPRAR -->
+<div class="modal fade" id="modalComprar" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalCenterTitle">Comprar productos</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            </div>
+            <div class="modal-body">
+                <form action="">
+                    <div class="form-row">
+                        <div class="form-group col">
+                                <div class="input-group mb-3">
+                                        <div class="input-group-prepend">
+                                          <span class="input-group-text" id="basic-addon1">@</span>
+                                        </div>
+                                        <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                                </div>
+                        </div>
+                    </div>
+                </form>
+
+                <div class="alert alert-warning" role="alert">
+                        Recibirás un correo de confirmacion si sales sorteado
+                </div>
+
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+            <button type="button" class="btn btn-success">Comprar</button>
+            </div>
+        </div>
+        </div>
+    </div>
+<!-- /MODAL2 COMPRAR-->
 
 <app-footer></app-footer>
