@@ -10,6 +10,9 @@ export class DetalleComponent implements OnInit {
 
   constructor(private route: ActivatedRoute) {
       console.log(this.route.snapshot.params['id']);
+      console.log(this.route.snapshot.queryParams);
+      console.log(this.route.snapshot.queryParams['view']);
+      console.log(this.route.snapshot.queryParams['google']);
    }
 
   ngOnInit() {
