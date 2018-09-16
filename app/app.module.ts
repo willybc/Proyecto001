@@ -22,6 +22,7 @@ import { FooterComponent } from './page-bootstrap/footer/footer.component';
 import { AngularComponent } from './angular/angular.component';
 import { ResaltarDirective } from './angular/directives/resaltar.directive';
 import { ContarClicksDirective } from './angular/directives/contar-clicks.directive';
+import { DetalleComponent } from './angular/detalle/detalle.component';
 
 
 @NgModule({
@@ -36,7 +37,8 @@ import { ContarClicksDirective } from './angular/directives/contar-clicks.direct
     HomeComponent,
     GrillasComponent,
     FooterComponent,
-    AngularComponent
+    AngularComponent,
+    DetalleComponent
   ],
   imports: [
     BrowserModule,
