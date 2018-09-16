@@ -1,13 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-angular',
-  templateUrl: './angular.component.html',
-  styleUrls: ['./angular.component.css']
+  selector: 'app-lugares',
+  templateUrl: './lugares.component.html',
+  styleUrls: ['./lugares.component.css']
 })
-export class AngularComponent implements OnInit {
+export class LugaresComponent implements OnInit {
 
-  /* Directivas desactivadas
   tittle ='Angular';
   lugares:any = [
     {id:'1', plan:'pagado' ,cercania: 1, distancia: 10, active: true, nombre:'Florencia la Gardenia'},
@@ -17,8 +16,6 @@ export class AngularComponent implements OnInit {
     {id:'5', plan:'gratuito' ,cercania: 3, distancia: 10, active: false, nombre:'McDonals'},
     {id:'6', plan:'pagado' ,cercania: 3, distancia: 10, active: true, nombre:'Burger King'},
   ];
-
-  */
 
   lat:number= -34.5632236;
   lng:number = -58.4569978;

@@ -23,6 +23,7 @@ import { AngularComponent } from './angular/angular.component';
 import { ResaltarDirective } from './angular/directives/resaltar.directive';
 import { ContarClicksDirective } from './angular/directives/contar-clicks.directive';
 import { DetalleComponent } from './angular/detalle/detalle.component';
+import { LugaresComponent } from './angular/lugares/lugares.component';
 
 
 @NgModule({
@@ -38,7 +39,8 @@ import { DetalleComponent } from './angular/detalle/detalle.component';
     GrillasComponent,
     FooterComponent,
     AngularComponent,
-    DetalleComponent
+    DetalleComponent,
+    LugaresComponent
   ],
   imports: [
     BrowserModule,
