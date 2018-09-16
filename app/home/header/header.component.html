@@ -14,7 +14,7 @@
 					<div class="collapse navbar-collapse" id="navbarSupportedContent">
 						<ul class="navbar-nav mr-auto">	        	 
 						
-		          <li class="nav-item dropdown">
+		          <li routerLinkActive="active" class="nav-item dropdown">
 		            <a class="nav-link dropdown-toggle" href="#" id="item" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ITEM #1</a>
 		            <div class="dropdown-menu" aria-labelledby="dropdown01">
 		              <a class="dropdown-item" href="#">Action</a>
@@ -23,24 +23,24 @@
 		            </div>
 		          </li>
 
-		          <li class="nav-item" >
+		          <li routerLinkActive="active" class="nav-item" >
 		            <a class="nav-link" href="#" id="item">ITEM #2</a>
 							</li>
 
-		          <li class="nav-item" >
+		          <li routerLinkActive="active" class="nav-item" >
 		            <a class="nav-link" href="#" id="item">ITEM #3</a>
 							</li>
 							
-							<li class="nav-item dropdown" >
+							<li routerLinkActive="active" class="nav-item dropdown" >
 									<a class="nav-link dropdown-toggle" href="#"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="item">Angular</a>
 									<div class="dropdown-menu" aria-labelledby="dropdown01">
 										<a class="dropdown-item" [routerLink]="['angular']">Inicio</a>
 										<a class="dropdown-item" [routerLink]="['lugares']">Lugares</a>
-										<a class="dropdown-item" [routerLink]="['detalle']">Detalle</a>
+										<a class="dropdown-item" [routerLink]="['contacto']">Contacto</a>										
 								</div>
 							</li>
 
-		          <li class="nav-item dropdown">
+		          <li routerLinkActive="active" class="nav-item dropdown">
 									<a class="nav-link dropdown-toggle" href="#"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="item">Bootstrap</a>
 		            <div class="dropdown-menu" aria-labelledby="dropdown01">
 		              <a class="dropdown-item" [routerLink]="['bootstrap']">Inicio</a>

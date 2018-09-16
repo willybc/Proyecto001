@@ -24,6 +24,7 @@ import { ResaltarDirective } from './angular/directives/resaltar.directive';
 import { ContarClicksDirective } from './angular/directives/contar-clicks.directive';
 import { DetalleComponent } from './angular/detalle/detalle.component';
 import { LugaresComponent } from './angular/lugares/lugares.component';
+import { ContactoComponent } from './angular/contacto/contacto.component';
 
 
 @NgModule({
@@ -40,7 +41,8 @@ import { LugaresComponent } from './angular/lugares/lugares.component';
     FooterComponent,
     AngularComponent,
     DetalleComponent,
-    LugaresComponent
+    LugaresComponent,
+    ContactoComponent
   ],
   imports: [
     BrowserModule,
