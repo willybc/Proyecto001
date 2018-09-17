@@ -22,6 +22,7 @@ import { FooterComponent } from './page-bootstrap/footer/footer.component';
 import { AngularComponent } from './angular/angular.component';
 import { ResaltarDirective } from './angular/directives/resaltar.directive';
 import { ContarClicksDirective } from './angular/directives/contar-clicks.directive';
+import { OcticonDirective } from './angular/directives/opticon';
 import { DetalleComponent } from './angular/detalle/detalle.component';
 import { LugaresComponent } from './angular/lugares/lugares.component';
 import { ContactoComponent } from './angular/contacto/contacto.component';
@@ -33,6 +34,7 @@ import { ContactoComponent } from './angular/contacto/contacto.component';
     //DIRECTIVE
     ResaltarDirective,
     ContarClicksDirective,
+    OcticonDirective,
     HeaderComponent,
     CuerpoComponent,
     PageBootstrapComponent,
