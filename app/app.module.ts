@@ -26,6 +26,7 @@ import { OcticonDirective } from './angular/directives/opticon';
 import { DetalleComponent } from './angular/detalle/detalle.component';
 import { LugaresComponent } from './angular/lugares/lugares.component';
 import { ContactoComponent } from './angular/contacto/contacto.component';
+import { LugaresService } from './angular/services/lugares.service';
 
 
 @NgModule({
@@ -54,7 +55,7 @@ import { ContactoComponent } from './angular/contacto/contacto.component';
       apiKey: 'AIzaSyDhDxmnj_xsmJFSSv5baPAzIeontcIZsnk'
     })
   ],
-  providers: [],
+  providers: [LugaresService],
   bootstrap: [AppComponent]
 })
 
