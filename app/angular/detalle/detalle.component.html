@@ -1,33 +1,28 @@
-
 <div class="container">
-
-    <div class="container">
         <div class="card text-center">
             <div class="card-header">
               <ul class="nav nav-tabs card-header-tabs">
                 <li routerLinkActive="active"class="nav-item">
                   <a class="nav-link" routerLink="/lugares">Lugares</a>
                 </li>
+
                 <li routerLinkActive="active" class="nav-item">
                   <a class="nav-link active" routerLink="/contacto">Contacto</a>
                 </li>
-                
               </ul>
-            </div>
-          </div>
-        </div>
-             
-  <h1>{{lugar.nombre}}</h1>
-  <hr>
-    <br />
-    <div class="card">
-      <div class="card-body">
-          <p>Distancia :{{lugar.distancia}} km</p>
-          <p>{{lugar.description}}</p>
-          <b>Plan: {{lugar.plan}}</b>
-      </div>
-      
-    </div>
+            </div><!-- /card-header-->
+          </div> <!-- /card-text-->
 
-  
+        <div class="detalle pt-3">
+            <h1>{{lugar.nombre}}</h1>
+            <hr>
+              <br />
+              <div class="card">
+                <div class="card-body">
+                    <p>Distancia :{{lugar.distancia}} km</p>
+                    <p>{{lugar.description}}</p>
+                    <b>Plan: {{lugar.plan}}</b>
+                </div> 
+              </div>       
+        </div>
 </div>

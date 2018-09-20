@@ -27,6 +27,13 @@ import { DetalleComponent } from './angular/detalle/detalle.component';
 import { LugaresComponent } from './angular/lugares/lugares.component';
 import { ContactoComponent } from './angular/contacto/contacto.component';
 import { LugaresService } from './angular/services/lugares.service';
+import { CrearComponent } from './angular/crear/crear.component';
+/* Firebase*/
+import { AngularFireModule } from '@angular/fire';
+import { AngularFirestoreModule } from '@angular/fire/firestore';
+import { AngularFireStorageModule } from '@angular/fire/storage';
+import { AngularFireAuthModule } from '@angular/fire/auth';
+import { environment } from '../environments/environment';
 
 
 @NgModule({
@@ -45,7 +52,8 @@ import { LugaresService } from './angular/services/lugares.service';
     AngularComponent,
     DetalleComponent,
     LugaresComponent,
-    ContactoComponent
+    ContactoComponent,
+    CrearComponent    
   ],
   imports: [
     BrowserModule,
@@ -53,7 +61,13 @@ import { LugaresService } from './angular/services/lugares.service';
     app_routing,
     AgmCoreModule.forRoot({
       apiKey: 'AIzaSyDhDxmnj_xsmJFSSv5baPAzIeontcIZsnk'
-    })
+    }),
+    //FIREBASE
+    AngularFireModule.initializeApp(environment.firebase),
+    AngularFireModule.initializeApp(environment.firebase, 'Proyect001'),
+    AngularFirestoreModule,
+    AngularFireAuthModule,
+    AngularFireStorageModule
   ],
   providers: [LugaresService],
   bootstrap: [AppComponent]

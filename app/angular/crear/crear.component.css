@@ -1,0 +1,89 @@
+h3{
+    color: #757575;
+    padding-bottom: 25px;
+  }
+  
+  .jumbotron{
+    background-color: #eeeeee;
+  }
+  
+  .bg{
+      background-color: #c0d8f1!important;
+    }
+  
+  .InputWithIcon{
+    position:relative;
+  }
+  
+  .InputWithIcon input[type=text]{
+    padding-left:48px;
+  }
+  
+  .InputWithIcon span{
+    position: absolute;
+    left:5px;
+    top:1px;
+    padding: 6px 8px;
+    transition:.3s;
+  }
+  
+  .InputWithIcon input[type=text]:focus + span{
+    color:white;
+    background-color: #80d8ff;
+  }
+  
+  .InputWithIcon.InputIconBg span{
+    background-color:#aaa;
+    color:#fff;
+    border-radius: 4px 0 0 4px;
+  }
+  
+  /* */
+  
+  .InputWithIcon input[type=date]{
+    padding-left:48px;
+  }
+  
+  .InputWithIcon input[type=date]:focus + span{
+    color:white;
+    background-color: #80d8ff;
+  }
+
+  .InputWithIcon input[type=number]{
+    padding-left:48px;
+  }
+  
+  .InputWithIcon input[type=number]:focus + span{
+    color:white;
+    background-color: #80d8ff;
+  }
+  
+  /* */
+  
+  .InputWithIcon select{
+    padding-left:48px;
+  }
+  
+  .InputWithIcon select:focus + span{
+    color:white;
+    background-color: #80d8ff;
+  }
+  
+  .btn-primary{
+    color:#fff;
+    background-color: #80d8ff;
+    border-color: #40c4ff;
+  }
+  
+  .btn-primary:focus {
+    background-color: #0091ea;
+    
+  }
+  
+  /* */
+  
+  
+  
+  .btn.btn-primary{
+    width: 200px;
+  }

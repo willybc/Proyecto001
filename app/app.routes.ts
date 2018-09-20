@@ -8,6 +8,7 @@ import { GrillasComponent } from "./page-bootstrap/grillas/grillas.component";
 import { DetalleComponent } from './angular/detalle/detalle.component';
 import { LugaresComponent } from './angular/lugares/lugares.component';
 import { ContactoComponent } from './angular/contacto/contacto.component';
+import { CrearComponent } from './angular/crear/crear.component';
 
 
 
@@ -20,6 +21,8 @@ const app_routes: Routes = [
 	{ path: 'detalle/:id', component : DetalleComponent},
 	{ path: 'lugares', component: LugaresComponent},
 	{ path: 'contacto', component: ContactoComponent},
+	{ path: 'crear', component: CrearComponent},
+
 	{ path: '**', pathMatch: 'full', redirectTo: ''}
 	
 ];

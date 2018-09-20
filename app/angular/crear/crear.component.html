@@ -1,0 +1,72 @@
+<div class="container">
+    <div class="card text-center">
+        <div class="card-header">
+          <ul class="nav nav-tabs card-header-tabs">
+            <li routerLinkActive="active"class="nav-item">
+              <a class="nav-link" routerLink="/lugares">Lugares</a>
+            </li>
+            <li routerLinkActive="active" class="nav-item">
+              <a class="nav-link active" routerLink="/contacto">Contacto</a>
+            </li>
+          </ul>
+        </div><!-- /card-header-->  
+      </div><!-- /card text-center-->  
+  
+      <div class="jumbotron">
+        <form>
+          <div class="col text-center mb-12">
+            <h3>Crear anuncio</h3>
+          </div> <!-- /col text-center -->  
+  
+        <div class="form-row"> 
+  
+              <div class="form-group col-md-12 InputWithIcon InputIconBg">
+                  <p>
+                      <input type="text" class="form-control" placeholder="Nombre" [(ngModel)]="lugar.nombre" name="nombre">
+                      <span octicon="note" width="21"></span> 
+                  </p>
+              </div> <!-- /form-group--> 
+              
+              <div class="form-group col-md-12 InputWithIcon InputIconBg">
+                  <p>
+                      <input type="number" class="form-control" placeholder="Distancia" [(ngModel)]="lugar.distancia" name="distancia">
+                      <span octicon="note" width="21"></span> 
+                  </p>
+              </div> <!-- /form-group-->
+
+              <div class="form-group col-md-12 InputWithIcon InputIconBg">
+                  <p>
+                      <input type="number" class="form-control" placeholder="Cercania" [(ngModel)]="lugar.cercania" name="cercania">
+                      <span octicon="note" width="21"></span> 
+                  </p>
+              </div> <!-- /form-group-->
+
+              <div class="form-group col-md-12 InputWithIcon InputIconBg">
+                    <p>
+                        <input type="text" class="form-control" placeholder="Plan" [(ngModel)]="lugar.plan" name="plan" >
+                        <span octicon="note" width="21"></span> 
+                    </p>
+                </div> <!-- /form-group-->
+
+              <div class="form-group col-md-12 InputWithIcon InputIconBg">
+                  <p>
+                      <textarea class="form-control" [(ngModel)]="lugar.descripcion" name="descripcion" placeholder="Descripcion"></textarea>
+                  </p>
+              </div> <!-- /form-group-->  
+
+              
+
+            </div> <!-- /form-row--> 
+              
+            <div class="form-group">
+          
+                  <div class="col-lg-3 offset-lg-9 col-md-2 offset-md-8 col-sm" id="boton">
+                    <button type="submit" class="btn btn-primary" (click)="guardarLugar()">Enviar</button>
+                  </div> <!-- /boton--> 
+            </div> <!-- /form-group--> 
+      </form> <!-- /form--> 
+  
+    </div> <!-- /jumbotron--> 
+  </div> <!-- /container--> 
+  
+  
