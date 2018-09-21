@@ -29,11 +29,12 @@ import { ContactoComponent } from './angular/contacto/contacto.component';
 import { LugaresService } from './angular/services/lugares.service';
 import { CrearComponent } from './angular/crear/crear.component';
 /* Firebase*/
+import { environment } from '../environments/environment';
 import { AngularFireModule } from '@angular/fire';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { AngularFireStorageModule } from '@angular/fire/storage';
 import { AngularFireAuthModule } from '@angular/fire/auth';
-import { environment } from '../environments/environment';
+
 
 
 @NgModule({
@@ -63,8 +64,7 @@ import { environment } from '../environments/environment';
       apiKey: 'AIzaSyDhDxmnj_xsmJFSSv5baPAzIeontcIZsnk'
     }),
     //FIREBASE
-    AngularFireModule.initializeApp(environment.firebase),
-    AngularFireModule.initializeApp(environment.firebase, 'Proyect001'),
+    AngularFireModule.initializeApp(environment.firebase, 'proyect001-1842a'),
     AngularFirestoreModule,
     AngularFireAuthModule,
     AngularFireStorageModule

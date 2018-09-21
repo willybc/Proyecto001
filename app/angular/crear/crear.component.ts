@@ -11,15 +11,12 @@ export class CrearComponent implements OnInit {
   lugar:any = {};
 
 
-  constructor(private lugaresService: LugaresService) {
-
-  }
+  constructor(private lugaresService: LugaresService) {}
 
   guardarLugar(){
     this.lugaresService.guardarLugar(this.lugar);
   }
 
-  ngOnInit() {
-  }
+  ngOnInit() {}
 
 }
