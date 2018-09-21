@@ -1,5 +1,6 @@
 import { Injectable } from "@angular/core";
 import { AngularFirestore } from '@angular/fire/firestore';
+import { HttpClient } from '@angular/common/http';
 
 @Injectable()
 export class LugaresService{
@@ -12,7 +13,7 @@ export class LugaresService{
         {id:'6', plan:'pagado' ,cercania: 3, distancia: 10, active: true, nombre:'Burger King', descripcion:''},
       ];
 
-    constructor(public afDB: AngularFirestore){}
+    constructor(public afDB:AngularFirestore, private http: HttpClient){}
 
     public getLugares(){
         return this.afDB.collection('lugares/');
@@ -24,7 +25,11 @@ export class LugaresService{
 
     public guardarLugar(lugar){
         console.log(lugar);
-        this.afDB.collection('lugares').doc('/' + lugar.id ).set(lugar);  
+        this.afDB.doc('lugares/' + lugar.id).set(lugar);  
+      //this.afDB.collection('lugares').doc('/' + lugar.id ).set(lugar);  
+    }
 
+    public obtenerGeoData(direccion){
+        return this.http.get('http://maps.google.com/maps/api/geocode/json?address='+direccion);
     }
 }

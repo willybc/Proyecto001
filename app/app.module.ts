@@ -34,6 +34,7 @@ import { AngularFireModule } from '@angular/fire';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { AngularFireStorageModule } from '@angular/fire/storage';
 import { AngularFireAuthModule } from '@angular/fire/auth';
+import { HttpClientModule } from '@angular/common/http';
 
 
 
@@ -54,7 +55,7 @@ import { AngularFireAuthModule } from '@angular/fire/auth';
     DetalleComponent,
     LugaresComponent,
     ContactoComponent,
-    CrearComponent    
+    CrearComponent,
   ],
   imports: [
     BrowserModule,
@@ -67,7 +68,9 @@ import { AngularFireAuthModule } from '@angular/fire/auth';
     AngularFireModule.initializeApp(environment.firebase, 'proyect001-1842a'),
     AngularFirestoreModule,
     AngularFireAuthModule,
-    AngularFireStorageModule
+    AngularFireStorageModule,
+    //HTTP CLIENT GEOCODING
+    HttpClientModule
   ],
   providers: [LugaresService],
   bootstrap: [AppComponent]

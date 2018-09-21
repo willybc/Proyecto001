@@ -13,8 +13,8 @@ export class LugaresComponent {
   lng:number = -58.4569978;
 
   lugares = null;
-  constructor(private lugaresService: LugaresService) { 
-    lugaresService.getLugares()
+  constructor(private LugaresService: LugaresService) { 
+    LugaresService.getLugares()
     .valueChanges().subscribe(lugares =>{
       console.log(lugares)
       this.lugares = lugares;
