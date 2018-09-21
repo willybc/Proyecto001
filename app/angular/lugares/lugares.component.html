@@ -30,7 +30,8 @@
               <ul>
                   <ng-container *ngFor="let lugar of lugares" >
                   <a routerLink="../detalle/{{lugar.id}}" [queryParams]="{action:'view',referer:'google'}">
-                    <li *ngIf="lugar.active">
+                    <li>
+              <!--  <li *ngIf="lugar.active"> -->
                       {{ lugar.nombre }}
                     </li>
                   </a>

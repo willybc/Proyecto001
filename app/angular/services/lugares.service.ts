@@ -15,7 +15,7 @@ export class LugaresService{
     constructor(public afDB: AngularFirestore){}
 
     public getLugares(){
-        return this.lugares;
+        return this.afDB.collection('lugares/');
     }
 
     public buscarLugar(id){
@@ -24,6 +24,7 @@ export class LugaresService{
 
     public guardarLugar(lugar){
         console.log(lugar);
-        this.afDB.collection('lugares').add(lugar);   
+        this.afDB.collection('lugares').doc('/' + lugar.id ).set(lugar);  
+
     }
 }

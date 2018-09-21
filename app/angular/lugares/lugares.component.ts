@@ -6,20 +6,18 @@ import { LugaresService } from '../services/lugares.service';
   templateUrl: './lugares.component.html',
   styleUrls: ['./lugares.component.css']
 })
-export class LugaresComponent implements OnInit {
+export class LugaresComponent {
 
   tittle ='Angular';
-
-
   lat:number= -34.5632236;
   lng:number = -58.4569978;
 
   lugares = null;
   constructor(private lugaresService: LugaresService) { 
-    this.lugares = lugaresService.getLugares();
+    lugaresService.getLugares()
+    .valueChanges().subscribe(lugares =>{
+      console.log(lugares)
+      this.lugares = lugares;
+    });
   }
-
-  ngOnInit() {
-  }
-
 }
